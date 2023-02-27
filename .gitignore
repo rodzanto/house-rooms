@@ -1,0 +1,6 @@
+# Ignore dataset files
+photo_tagger/Split_Dataset/
+photo_tagger/House_Room_Dataset/
+house-rooms-image-dataset.zip
+model.pth
+kaggle.json
