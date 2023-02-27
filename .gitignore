@@ -4,3 +4,5 @@ photo_tagger/House_Room_Dataset/
 house-rooms-image-dataset.zip
 model.pth
 kaggle.json
+photo_tagger/.ipynb_checkpoints
+photo_tagger/ipynb_checkpoints

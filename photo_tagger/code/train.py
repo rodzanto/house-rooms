@@ -44,7 +44,6 @@ def _get_train_data_loader(batch_size, training_dir, is_distributed, **kwargs):
     
     dataset = datasets.ImageFolder(
         training_dir,
-        train=True,
         transform=transforms.Compose(
             [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))]
         ),
@@ -66,7 +65,6 @@ def _get_test_data_loader(test_batch_size, training_dir, **kwargs):
     return torch.utils.data.DataLoader(
         datasets.ImageFolder(
             training_dir,
-            train=False,
             transform=transforms.Compose(
                 [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))]
             ),
